@@ -30,23 +30,19 @@ Link to Stable Diffusion explainer
 
 ---
 
-## DEMO 1: Image generation with (negative) prompts
+## Photorealistic DEMO 1: Image generation / composition with (negative) prompts
 
 ---
 
-## DEMO 2: Draw the f***ing owl!!
+## Photorealistic DEMO 2: With MY face
+
+* Face reference
+* Prompt: red shirt, necktie, smiling
 
 ---
 
-## DEMO 3: Colorize a B/W picture
+## Digital Artwork DEMO 1: Draw the f***ing owl!!
 
 ---
 
-## DEMO 4: Generate images with specific poses
-
----
-
-## DEMO 5: Generate animation
-
-
-
+## Digital Artwork DEMO 2: Let's make a character
