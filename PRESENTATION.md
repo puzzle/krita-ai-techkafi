@@ -42,6 +42,8 @@ Allows you to control the image generation with Stable Diffusion more precisely:
 
 # DEMO Comfy UI
 
+http://10.23.23.2:8188
+
 ---
 
 ## But still...
@@ -71,6 +73,12 @@ https://github.com/Acly/krita-ai-diffusion
 * Works Out-of-the-box:
   * Installs Comfy UI with everything included
   * Works with CPU or GPU (or GPUaaS)
+
+Requirements for local generation:
+
+* NVidia GPU, at least 8GB VRam (depending on BaseModel)
+
+There is a CPU fallback, but takes 10x longer to render
 
 ---
 
@@ -106,7 +114,9 @@ And paste it into Krita:
 * Example prompt: `Summer beach, palms, sunset, lens flare`
 * Negative prompt: `people, clouds`
 
-Add a sand castle to the image
+Add a sand castle to the image.
+
+![beach](beach.png)
 
 ---
 
@@ -114,8 +124,12 @@ Add a sand castle to the image
 
 Add your face on generated images.
 
+![kt](kt_source.png)
+
 * Face reference
-* Prompt: red shirt, necktie, smiling
+* Prompt: portrait, necktie, smiling, hands on chin
+
+![ktresult](kt_result.png)
 
 ---
 
@@ -142,6 +156,16 @@ Change some things in picture
 ## Digital Artwork DEMO: Poses
 
 * Text prompt: `jumping princess, crown`
+
+---
+
+## Upscaling DEMO: Navy-CIS "Computer Enhance"
+
+Usually used to upscale generated images to a higher resolution.
+
+![low](low_res.png)
+
+![high](upscaled.png)
 
 ---
 
@@ -180,3 +204,9 @@ https://civitai.com/models
 
 ---
 
+## My Setup & Questions
+
+* CPU: AMD Ryzen 7900X
+* GPU: NVidia
+* Tablet: iPad Air 2020 w/ Apple Pencil
+* Connected using Weylus 
