@@ -1,0 +1,120 @@
+$title-slide-bg: #1E5A96;
+$title-slide-fg: white;
+
+$normal-slide-bg: white;
+$normal-slide-fg: #1E5A96;
+
+html, body, main {
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  font-size: 200% !important;
+  overflow: hidden;
+
+  background-color: $normal-slide-bg;
+
+  transition: all 600ms;
+
+  &.title-slide {
+    background-color: $title-slide-bg;
+    color: $title-slide-fg;
+  }
+
+  > div {
+    position: fixed;
+    padding: 5% 10% 10% 10%;
+    height: 100vh;
+    width: 100vw;
+    overflow: auto;
+    color: $normal-slide-fg;
+
+    &.title-slide {
+      color: $title-slide-fg;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;  
+    }
+
+    > div.hljs {
+      font-size: 60%;
+      position: relative;
+      cursor: pointer;
+      border-radius: 0.4em;
+      margin: 0.5em 0;
+      padding: 0.5em;
+      white-space: pre;
+      overflow: hidden;
+
+      &::after {
+        position: absolute;
+        right: 1em;
+        top: 1.5em;
+        opacity: 0.3;
+        font-size: 60%;
+        content: "Click to copy";
+      }
+    }
+
+    code.hljs {
+      background: #011627;
+      display: inline;
+    }
+
+    ul {
+      list-style-type: disc;
+    }
+
+    ol {
+      list-style-type: decimal;
+    }
+
+    img {
+      max-width: 60vmin;
+      max-height: 60vmin;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+nav {
+  position: fixed;
+  height: 10vh;
+  bottom: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  left: 5vw;
+  right: 5vw;
+  svg {
+    stroke-width: 2px;
+    line {
+      stroke: black;
+      stroke-width: 2px;
+    }
+    circle {
+      stroke: white;
+      fill: $normal-slide-fg;
+    }
+
+    #interactor {
+      fill: rgba(0,0,0,0);
+    }
+    #indicator {
+      stroke: white;
+      fill: $normal-slide-fg;
+    }
+    text {
+      paint-order: stroke fill;
+      stroke: rgba(255,255,255,0.8);
+      stroke-width: 3px;
+      stroke-linecap: butt;
+      stroke-linejoin: miter;
+      fill: #000000;
+    }
+  }
+}
