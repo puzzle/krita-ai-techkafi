@@ -1,4 +1,8 @@
-# Krita and Stable Diffusion aka AI Image Generation for "Otto-normalverbraucher"
+# AI Image generation for non-savvy people
+
+With Krita and AI Diffusion Plugin
+
+15.05.2024
 
 ---
 
@@ -14,19 +18,24 @@ Everyone knows Stable Diffusion indirectly.
 
 Whenever you generate images using a text prompt, a Stable Diffusion Algorithm is being used.
 
-![bing ai](bing.png)
-
 https://poloclub.github.io/diffusion-explainer/
 
-... but this is not a presentation about Stable Diffusion.
+... but today is not about Stable Diffusion.
 
 ---
 
 ## Concerns with online image generation
 
-* You can only control the text prompt
-* No control for: AI Model, training, resolution, etc.
-* Concerns about privacy, training-data, etc.
+The user can only control *the Prompt*.
+
+He has no control on:
+
+* Checkpoint Model (AI Model) to use
+* Resolution
+* Training
+
+
+Also there are concerns about privacy, source data, copyright...
 
 ---
 
@@ -37,10 +46,11 @@ Allows you to control the image generation with Stable Diffusion more precisely:
 * Select Base Model
 * Select Input data
 * Allows for Text2Img, Img2Img...
+* and much more - using a node graph.
 
 ---
 
-# DEMO Comfy UI
+## DEMO Comfy UI
 
 http://10.23.23.2:8188
 
@@ -48,13 +58,13 @@ http://10.23.23.2:8188
 
 ## But still...
 
-... it's not really usable for digital artists.
+... it's not really convenient for digital artists.
 
 ---
 
 ## Krita Stable Diffusion Plugin to the rescue!
 
-* Stable Diffusion directly integrated a image editor
+Stable Diffusion directly integrated in an image editor
 
 https://github.com/Acly/krita-ai-diffusion
 
@@ -111,12 +121,13 @@ And paste it into Krita:
 
 ## Inpainting DEMO: Image generation / composition with (negative) prompts
 
-* Example prompt: `Summer beach, palms, sunset, lens flare`
-* Negative prompt: `people, clouds`
-
-Add a sand castle to the image.
 
 ![beach](beach.png)
+
+<small>
+Example prompt: `Summer beach, palms, sunset, lens flare`
+Negative prompt: `people, clouds`
+</small>
 
 ---
 
@@ -124,12 +135,13 @@ Add a sand castle to the image.
 
 Add your face on generated images.
 
-![kt](kt_source.png)
+![kt](kt_source.png) ![ktresult](kt_result.png)
 
-* Face reference
-* Prompt: portrait, necktie, smiling, hands on chin
+<small>
+Face reference
+Prompt: portrait, necktie, smiling, hands on chin
+</small>
 
-![ktresult](kt_result.png)
 
 ---
 
@@ -137,17 +149,16 @@ Add your face on generated images.
 
 Enlarge a picture (Iguazu Falls)
 
-* Text prompt: `waterfalls, jungle, sky, clouds`
 
-![landscape](landscape.png)
+![landscape](landscape.png) ![landscape2](landscape-out.png)
 
-![landscape2](landscape-out.png)
+Text prompt: `waterfalls, jungle, sky, clouds`
 
 ---
 
 ## Digital Artwork DEMO: A fantasy oktoberfest
 
-* Text prompt: `rabbit with beer in hand, oktoberfest`
+Text prompt: `rabbit with beer in hand, oktoberfest`
 
 Change some things in picture
 
@@ -163,9 +174,7 @@ Change some things in picture
 
 Usually used to upscale generated images to a higher resolution.
 
-![low](low_res.png)
-
-![high](upscaled.png)
+![low](low_res.png) ![high](upscaled.png)
 
 ---
 

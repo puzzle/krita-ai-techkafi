@@ -9,7 +9,7 @@ html, body, main {
   height: 100vh;
 }
 
-main {
+main.markdown-body {
   font-size: 200% !important;
   overflow: hidden;
 
@@ -72,9 +72,9 @@ main {
     }
 
     img {
-      max-width: 60vmin;
-      max-height: 60vmin;
-      display: block;
+      max-width: 45%;
+      max-height: 40vmin;
+      display: inline-block;
       margin: 0 auto;
     }
   }
