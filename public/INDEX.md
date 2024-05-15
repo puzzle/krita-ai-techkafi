@@ -4,11 +4,16 @@ With Krita and AI Diffusion Plugin
 
 15.05.2024
 
+https://puzzle.github.io/krita-ai-techkafi/
+
 ---
 
 ## Check-in question
 
 What kind of image processing software are YOU using?
+
+
+![editors.png](editors.png)
 
 ---
 
@@ -20,7 +25,7 @@ Whenever you generate images using a text prompt, a Stable Diffusion Algorithm i
 
 https://poloclub.github.io/diffusion-explainer/
 
-... but today is not about Stable Diffusion.
+... but today is not about Stable Diffusion algorithm.
 
 ---
 
@@ -33,7 +38,6 @@ He has no control on:
 * Checkpoint Model (AI Model) to use
 * Resolution
 * Training
-
 
 Also there are concerns about privacy, source data, copyright...
 
@@ -116,6 +120,10 @@ And paste it into Krita:
 ## Add AI Generation Docket
 
 ![docket](docket.png)
+
+---
+
+# DEMO Time
 
 ---
 

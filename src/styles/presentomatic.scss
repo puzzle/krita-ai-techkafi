@@ -20,6 +20,11 @@ main.markdown-body {
   &.title-slide {
     background-color: $title-slide-bg;
     color: $title-slide-fg;
+
+    a {
+      text-decoration: underline;
+      color: lightblue;
+    }
   }
 
   > div {
@@ -69,6 +74,10 @@ main.markdown-body {
 
     ol {
       list-style-type: decimal;
+    }
+
+    p:has(img) {
+      text-align: center;
     }
 
     img {
